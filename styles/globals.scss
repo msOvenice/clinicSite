@@ -1,0 +1,53 @@
+@import 'reset-css';
+@import 'fonts';
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #000000;
+	overflow-x: hidden;
+	min-width: 250px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	&Row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-right: 20px;
+	}
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+	max-width: 1358px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
