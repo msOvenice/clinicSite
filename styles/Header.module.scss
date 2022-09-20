@@ -30,7 +30,8 @@
     text-decoration: none;
 }
 .btn {
-    width: 110px;
+    max-width: 110px;
+    width: 100%;
     height: 50px;
     background: #2D4F9C;
     border-radius: 20px 0px 10px;
@@ -43,8 +44,69 @@
     line-height: 22px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    &Green {
+        background: #52A958;
+    }
 }
-.headerFirst {
-    padding: 54px 0 36.16px;
-	border-bottom: 1px solid #52A958;
+.header {
+    &First {
+        padding: 54px 0 36.16px;
+        border-bottom: 1px solid #52A958;
+    }
+}
+.wrapper {
+    padding-right: 20px;
+}
+.label {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        bottom: 0;
+        width: 16px;
+        height: 22px;
+    }
+}
+.listInputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 50px;
+}
+.input {
+    width: 300px;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    outline: none;
+    padding: 9px 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    &:hover,
+    &:active,
+    &:focus {
+        border-bottom: 1px solid #52A958;
+        box-shadow: 0px 1px 1px rgba(82, 169, 88, 0.25);
+    }
+}
+.itemInputs:first-child > .label::before {
+    width: 20px;
+    background: url(../img/svg/user.svg);
+}
+.itemInputs:nth-child(2) > .label::before {
+    height: 18px;
+    background: url(../img/svg/stetoskop.svg);
+}
+.itemInputs:last-child > .label::before {
+    background: url(../img/svg/clinic.svg);
+}
+.container {
+    padding: 37px 15px 32px;
+}
+.hr {
+    margin: 0;
+    background: #2D4F9C;
+    height: 4px;
+    box-shadow: 0px 2px 2px #2D4F9C;
 }

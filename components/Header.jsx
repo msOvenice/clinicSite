@@ -2,16 +2,17 @@ import React from 'react';
 import styles from '../styles/Header.module.scss';
 import logo from "../img/simejna-logo-2.png";
 import Image from 'next/image'
+import Search from '../elements/Search';
 
-function Header() {
+const Header = () => {
   return (
     <header>
         <div className={styles.headerFirst}>
             <div className='container'>
-                <div className='wrapperRow'>
+                <div className={'wrapper ' + styles.wrapper}>
                     <div className={styles.divImg}>
                         <Image
-                            alt={"some alt"}
+                            alt={"Clinic Family"}
                             src={logo}
                             height={61.84}
                             width={250}
@@ -44,7 +45,8 @@ function Header() {
                 </div>
             </div>
         </div>
-        <div className={styles.headerSecond}></div>
+        <Search />
+        <hr className={styles.hr}></hr>
     </header>
   )
 }
