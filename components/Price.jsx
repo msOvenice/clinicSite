@@ -3,6 +3,8 @@ import price from '../price.json'
 import styles from '../styles/Price.module.scss'
 
 const Price = () => {
+    let i = 0;
+
     return (
         <section className={styles.price}>
             <h1 className={styles.title}>Ціни на медичні послуги</h1>
@@ -10,8 +12,9 @@ const Price = () => {
                 <tbody>
                     {
                         price.map((item) => {
+                            i+=1;
                             return (
-                        <tr className={styles.tr}>
+                        <tr className={styles.tr} key={i}>
                             <td className={styles.td}>{item.service}</td>
                             <td className={styles.td}>{item.price}</td>
                         </tr>)
