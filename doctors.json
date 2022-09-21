@@ -4,41 +4,47 @@
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
         "specialization": "лікар-терапевт",
-        "category": "вищої категорії"
+        "category": "вищої категорії",
+        "expierence": "10"
     },
     {
         "img": "../img/doctor.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
         "specialization": "лікар-терапевт",
-        "category": "вищої категорії"
+        "category": "вищої категорії",
+        "expierence": "10"
     },
     {
         "img": "../img/doctor.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
         "specialization": "лікар-терапевт",
-        "category": "вищої категорії"
+        "category": "вищої категорії",
+        "expierence": "10"
     },
     {
         "img": "../img/doctor.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
         "specialization": "лікар-терапевт",
-        "category": "вищої категорії"
+        "category": "вищої категорії",
+        "expierence": "10"
     },
     {
         "img": "../img/doctor.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
         "specialization": "лікар-терапевт",
-        "category": "вищої категорії"
+        "category": "вищої категорії",
+        "expierence": "10"
     },
     {
         "img": "../img/doctor.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
         "specialization": "лікар-терапевт",
-        "category": "вищої категорії"
+        "category": "вищої категорії",
+        "expierence": "10"
     }
 ]

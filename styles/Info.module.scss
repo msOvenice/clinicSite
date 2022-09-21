@@ -1,0 +1,119 @@
+.container {
+    max-width: 918px;
+    width: 100%;
+    padding: 151px 15px 134px;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    max-width: 751px;
+    width: 100%;
+    &Img {
+        //filter: drop-shadow(0px 3px 6px #2D4F9C);
+        border-radius: 0px 0px 50px 0px;
+    }
+    &:nth-child(2n) {
+        justify-content: flex-end;
+    }
+}
+.info {
+    max-width: 210px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    &Surname {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &Name,
+    &Surname {
+        font-weight: 700;
+        text-align: center;
+        color: #2D4F9C;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &Name {
+        margin-bottom: 35px;
+    }
+    &Specialization {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    &Category {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        color: #2D4F9C;
+        margin-bottom: 35px;
+    }
+    &Btn {
+        border-radius: 20px 0px 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        width: 100%;
+        cursor: pointer;
+        padding: 8px 26px;
+        border: none;
+        background: #2D4F9C;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+        max-width: 200px;
+    }
+    &Expierence {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 23px;
+        &Block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 51px;
+        }
+    }
+    &Year {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        color: #2D4F9C;
+        margin-right: 16px;
+        &Text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+.data {
+    padding-bottom: 106px;
+}
+.subtitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D4F9C;
+    margin-bottom: 30px;
+}
+.work,
+.achievement {
+    margin-bottom: 35px;
+}
+.hr {
+    background: #2D4F9C;
+    height: 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    margin: 0 0 35px;
+}
+.Item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
