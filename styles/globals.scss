@@ -54,3 +54,19 @@ body {
     color: #2D4F9C;
     text-transform: uppercase;
 }
+
+.wrapperBlock {
+    max-width: 505px;
+    width: 100%;
+    &:not(:last-child) {
+		margin-bottom: 37px;
+	}
+}
+.titleMain {
+	text-align: center;
+	font-weight: 900;
+    font-size: 52px;
+    line-height: 59px;
+    color: #2D4F9C;
+    -webkit-text-stroke: 1.5px #FFFFFF;
+}

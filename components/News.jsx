@@ -4,13 +4,14 @@ import newsMain from '../news.json'
 import newsAll from '../news.all.json'
 import NewMain from '../elements/NewMain';
 import NewAll from '../elements/NewAll';
+import NavBlock from '../elements/NavBlock';
 
 const News = () => {
-    let i = 0, j = 0;
+  let i = 0, j = 0;
   return (
     <section className={styles.container + ' container'}>
         <h2 className={'title ' + styles.title}>Новини</h2>
-        <div className={'wrapper ' + styles.wrapper}>
+        <div className={'wrapper ' + styles.wrappers}>
             <div className={styles.main}>
                 <h3 className={styles.subtitle}>Головні</h3>
                 <div className={styles.news}>
@@ -28,12 +29,13 @@ const News = () => {
                 {
                     newsAll.map((item) => {
                     j += 1;
-                    return <NewAll key={j} {...item} />
+                    return <NewAll key={j} {...item} flag={true} />
                     })
                 }
                 </div>
             </div>
         </div>
+        <NavBlock flag={true} />
     </section>
   )
 }

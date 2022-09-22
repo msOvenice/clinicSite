@@ -1,12 +1,8 @@
-.wrapper {
-    max-width: 505px;
-    width: 100%;
-    margin-bottom: 37px;
-}
 .imgBlock {
     opacity: 0.9;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 30px 0px 10px;
+    margin-right: 28px;
 }
 .info {
     font-family: 'Open Sans', sans-serif;
@@ -21,9 +17,20 @@
     margin-bottom: 11px;
     margin-top: -5px;
 }
+.titleSecond {
+    font-weight: 600;
+    color: #2D4F9C;
+    text-transform: uppercase;
+    margin-top: -5px;
+    max-width: 254px;
+}
 .section {
     color: #52A958;
     margin-bottom: 14px;
+}
+.sectionSecond {
+    color: #52A958;
+    margin-bottom: 3px;
 }
 .date {
     color: #000000;

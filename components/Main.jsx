@@ -10,7 +10,7 @@ const Main = () => {
   return (
     <div>
       <section className={styles.main}>
-          <h1 className={styles.title}>Команда лікарів</h1>
+          <h1 className={'titleMain ' + styles.title}>Команда лікарів</h1>
       </section>
       <section className={'container ' + styles.container}>
         <h2 className={styles.subtitle}>Усі лікарі</h2>

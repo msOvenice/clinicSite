@@ -3,8 +3,9 @@
     max-width: 1074px;
     width: 100%;
 }
-.wrapper {
+.wrappers {
     align-items: flex-start;
+    margin-bottom: 19px;
 }
 .title {
     margin-bottom: 67px;
@@ -32,7 +33,9 @@
     width: 100%;
 }
 .newsMain {
-    margin-bottom: 40px;
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
     position: relative;
 }
 .imgBlock {
