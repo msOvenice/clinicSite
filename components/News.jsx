@@ -10,7 +10,7 @@ const News = () => {
   return (
     <section className={styles.container + ' container'}>
         <h2 className={'title ' + styles.title}>Новини</h2>
-        <div className='wrapper'>
+        <div className={'wrapper ' + styles.wrapper}>
             <div className={styles.main}>
                 <h3 className={styles.subtitle}>Головні</h3>
                 <div className={styles.news}>
