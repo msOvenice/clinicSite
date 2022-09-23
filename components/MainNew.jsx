@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from '../styles/NewsMain.module.scss'
-import newsMain from '../news.json'
 import newsAll from '../news.all.json'
-import NewMain from '../elements/NewMain';
 import NewAll from '../elements/NewAll';
 import NavBlock from '../elements/NavBlock';
-import src from '../img/main.jpg'
+import src from '../img/news-main.png'
+import srcSlider from '../img/news-slider.jpg'
 import Image from 'next/image';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const MainNew = () => {
   let i = 0, j = 0;
@@ -40,13 +41,43 @@ const MainNew = () => {
                         <p className={styles.text}>Sed vitae dui sed risus consequat commodo in non lectus. Mauris eu varius elit, at aliquet enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quam tortor, lacinia sed ipsum eu, sodales mattis libero. Nullam pretium elit in odio dignissim faucibus. Fusce maximus elit luctus, vehicula nunc id, rutrum ipsum. Morbi odio justo, sollicitudin tincidunt ex vel, egestas ultricies tellus. Curabitur bibendum semper sapien et lobortis. Donec id turpis tellus. Suspendisse eleifend, elit vel pretium tristique, justo metus porttitor elit, a varius massa odio eget justo. Vestibulum vitae lorem eget odio porttitor fermentum tincidunt a mi. Aliquam nec fermentum velit, et lobortis libero. Curabitur eget dolor pharetra, mattis orci a, viverra ipsum.</p>
                     </div>
                 </div>
-                <div className={styles.imgBlock}>
-                    <Image 
+                <Carousel>
+                    <div>
+                        <Image 
                         alt={"News"}
-                        src={src}
+                        src={srcSlider}
                         height={370}
                         width={640}/>
-                </div>
+                    </div>
+                    <div>
+                        <Image 
+                        alt={"News"}
+                        src={srcSlider}
+                        height={370}
+                        width={640}/>
+                    </div>
+                    <div>
+                        <Image 
+                        alt={"News"}
+                        src={srcSlider}
+                        height={370}
+                        width={640}/>
+                    </div>
+                    <div>
+                        <Image 
+                        alt={"News"}
+                        src={srcSlider}
+                        height={370}
+                        width={640}/>
+                    </div>
+                    <div>
+                        <Image 
+                        alt={"News"}
+                        src={srcSlider}
+                        height={370}
+                        width={640}/>
+                    </div>
+                </Carousel>
             </div>
             <div className={styles.all}>
                 <h3 className={styles.subtitle}>Всі новини</h3>

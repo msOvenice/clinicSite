@@ -1,0 +1,49 @@
+
+.carousel-root {
+	position: relative !important;
+}
+.carousel-status {
+    display: none;
+}
+.control-arrow {
+	width: 60px;
+	height: 60px;
+	background: #FFFFFF !important;
+	border: 1px solid #2D4F9C !important;
+	z-index: 10;
+	top: 72% !important;
+	&:nth-child(4) {
+		right: 25px !important;
+	}
+	&:nth-child(2) {
+		left: 25px !important;
+	}
+}
+.control-next::before {
+	content: url(../img/svg/Arrow-next.svg) !important;
+	border-top: none !important;
+	border-left: none !important;
+}
+.control-prev::before {
+	content: url(../img/svg/Arrow-prev.svg) !important;
+	border-top: none !important;
+	border-right: none !important;
+}
+.control-dots {
+	bottom: -40px !important;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot {
+	background: rgba(45, 79, 156, 0.5) !important;
+	width: 15px !important;
+	height: 15px !important;
+	&.selected {
+		width: 20px !important;
+		height: 20px !important;
+	}
+}
+.carousel-slider {
+	position: initial !important;
+}

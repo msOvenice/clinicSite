@@ -1,5 +1,6 @@
 import '../styles/globals.scss'
 import Layout from '../components/Layout'
+import '../styles/carousel.scss'
 
 function MyApp({ Component, pageProps }) {
   return (
