@@ -95,9 +95,25 @@ body {
 }
 .slick-prev {
 	left: 0 !important;
+	&::before {
+		content: url(../img/svg/arr-left.svg) !important;
+	    font-size: 19px;
+		opacity: 1 !important;
+		position: absolute;
+		left: 14px;
+		top: 17px;
+	}
 }
 .slick-next {
 	right: 0 !important;
+	&::after {
+		content: url(../img/svg/arr-right.svg) !important;
+		font-size: 19px;
+		opacity: 1 !important;
+		position: absolute;
+		left: 14px;
+		top: 27px;
+	}
 }
 .slick-slide {
 	margin: 0 30px;

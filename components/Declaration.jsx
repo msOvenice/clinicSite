@@ -7,13 +7,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import actions from "../actions.json";
+import articles from "../articles.json";
+import NewMain from '../elements/NewMain';
+import Feedback from '../elements/Feedback'
 
 const Declaration = () => {
     let settings = {
         slidesToShow: 2,
         slidesToScroll: 1
     };
-    let i = 0;
+    let i = 0, j = 0;
     return (
         <div>
             <section className={styles.main}>
@@ -47,7 +50,7 @@ const Declaration = () => {
                 </div>
             </section>
             <section className={styles.action  + ' ' + styles.container + ' container'}>
-                <h2 className={'title ' + styles.title}>Акції</h2>
+                <h2 className={'title ' + styles.actionBigTitle}>Акції</h2>
                 <Slider {...settings}>
                 {
                     actions.map((item) => {
@@ -68,7 +71,21 @@ const Declaration = () => {
                 }
                 </Slider>
             </section>
-            
+            <section className={styles.articles  + ' ' + styles.container + ' container'}>
+                <h2 className={'title ' + styles.articlesTitle}>Статті</h2>
+                <Slider {...settings} className={styles.articlesSlider}>
+                {
+                    articles.map((item) => {
+                        j += 1;
+                        return (
+                            <NewMain key={j} {...item} flag={false} />
+                        )
+                    })
+                }
+                </Slider>
+                <button className={styles.articlesBtn}>Усі новини</button>
+            </section>
+            <Feedback />
         </div>
     )
 }

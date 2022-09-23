@@ -18,7 +18,7 @@ const News = () => {
                 {
                     newsMain.map((item) => {
                     i += 1;
-                    return <NewMain key={i} {...item} />
+                    return <NewMain key={i} {...item} flag={true} />
                     })
                 }
                 </div>
