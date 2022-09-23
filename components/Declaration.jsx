@@ -50,9 +50,9 @@ const Declaration = () => {
                 <h2 className={'title ' + styles.title}>Акції</h2>
                 <Slider {...settings}>
                 {
-                    actions.map((item) => {
+                    actions.map((item, index) => {
                         return (
-                            <div className={styles.actionBlock}>
+                            <div className={styles.actionBlock} key={index}>
                                 <div className={styles.actionImg}>
                                     <Image 
                                         alt={"News"}
