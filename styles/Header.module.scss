@@ -1,3 +1,5 @@
+@import 'vars';
+
 .divImg {
     margin-right: 10px;
 }
@@ -15,7 +17,7 @@
     color: #071C4A;
     font-family: 'FontAwesome';
     font-weight: 400;
-    font-size: 20px;
+    font-size: calcFluidFontSize(14, 20, 420, 1440);
     line-height: 23px;
     &:hover {
         color: #52A958;
@@ -24,10 +26,11 @@
 .phone {
     font-family: 'Open Sans';
     font-weight: 700;
-    font-size: 20px;
+    font-size: calcFluidFontSize(14, 20, 420, 1440);
     line-height: 27px;
     color: #52A958;
     text-decoration: none;
+    white-space: nowrap;
 }
 .btn {
     max-width: 110px;
@@ -46,6 +49,7 @@
     color: #FFFFFF;
     &Green {
         background: #52A958;
+        padding: 0 15px;
     }
 }
 .header {
@@ -74,9 +78,17 @@
     width: 100%;
     margin-right: 50px;
 }
+.blockNav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-between;
+}
 .input {
-    width: 300px;
-    font-size: 18px;
+    max-width: 300px;
+    width: 100%;
+    font-size: calcFluidFontSize(14, 18, 420, 1440);
     line-height: 22px;
     color: rgba(0, 0, 0, 0.6);
     outline: none;
@@ -89,6 +101,9 @@
         border-bottom: 1px solid #52A958;
         box-shadow: 0px 1px 1px rgba(82, 169, 88, 0.25);
     }
+}
+.itemInputs:not(:last-child) .input {
+    margin-right: 15px;
 }
 .itemInputs:first-child > .label::before {
     width: 20px;
@@ -109,4 +124,89 @@
     background: #2D4F9C;
     height: 4px;
     box-shadow: 0px 2px 2px #2D4F9C;
+}
+@media (max-width: 1400px) {
+    .headerFirst {
+        padding: 31px 0 34px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+@media (max-width: 1200px) {
+    .blockNav {
+        flex-direction: column;
+        height: 80px;
+        width: min-content;
+        align-items: flex-end;
+    }
+    .phone {
+        order: 2;
+    }
+    .listInputs {
+        margin-right: 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .blockNav {
+        align-items: center;
+        flex-direction: row;
+        height: fit-content;
+        width: -webkit-fill-available;
+        max-width: 350px;
+    }
+    .phone {
+        order: inherit;
+    }
+    .list {
+        display: none;
+    }
+    .divImg {
+        margin-right: 20px;
+    }
+    .listInputs {
+        column-gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .listInputs {
+        display: none;
+    }
+    .btnGreen {
+        max-width: 370px;
+        margin: 0 auto;
+        background: #2D4F9C;
+    }
+    .wrapper {
+        padding-right: 0;
+    }
+    .headerFirst {
+        border-bottom: none;
+        padding: 31px 0 0;
+    }
+    .container {
+        padding: 34px 24px;
+    }
+}
+@media (max-width: 640px) {
+    .phone {
+        display: none;
+    }
+    .btn {
+        margin-right: 20px;
+    }
+    .btnGreen {
+        margin: 0 auto;
+    }
+    .blockNav {
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 520px) {
+    .btn {
+        display: none;
+    }
+    .btnGreen {
+        display: block;
+    }
 }

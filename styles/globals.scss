@@ -1,5 +1,6 @@
 @import 'reset-css';
 @import 'fonts';
+@import 'vars';
 
 html,
 body {
@@ -65,7 +66,8 @@ body {
 .titleMain {
 	text-align: center;
 	font-weight: 900;
-    font-size: 52px;
+    //font-size: calc(28px + 24 * (100vw / 1440));
+	font-size: calcFluidFontSize(32, 48, 420, 1400);
     line-height: 59px;
     color: #2D4F9C;
     -webkit-text-stroke: 1.5px #FFFFFF;
@@ -117,4 +119,25 @@ body {
 }
 .slick-slide {
 	margin: 0 30px;
+}
+.popup-content {
+    height: 100vh;
+	padding: 0 !important;
+  }
+  
+@media (max-width: 1024px) {
+	.popup-content {
+		width: 50vw !important;
+		margin: inherit !important;
+	}
+}
+@media (max-width: 768px) {
+	.popup-content {
+		width: 80vw !important;
+	}
+}
+@media (max-width: 520px) {
+	.popup-content {
+		width: 80vw !important;
+	}
 }

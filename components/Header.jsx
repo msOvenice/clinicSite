@@ -3,6 +3,7 @@ import styles from '../styles/Header.module.scss';
 import logo from "../img/simejna-logo-2.png";
 import Image from 'next/image'
 import Search from '../elements/Search';
+import PopupMenu from '../elements/PopupMenu';
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
                             src={logo}
                             height={61.84}
                             width={250}
+                            layout="fixed"
                         />
                     </div>
                     <ul className={styles.list}>
@@ -38,10 +40,13 @@ const Header = () => {
                             <a href="#" className={styles.link}>Співпраця</a>
                         </li>
                     </ul>
-                    <a className={styles.phone} href="phone:+38 097 401 10 10">+38 097 401 10 10</a>
-                    <button className={styles.btn}>
-                        Вхід
-                    </button>
+                    <div className={styles.blockNav}>
+                        <a className={styles.phone} href="phone:+38 097 401 10 10">+38 097 401 10 10</a>
+                        <button className={styles.btn}>
+                            Вхід
+                        </button>
+                        <PopupMenu />
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,3 +1,5 @@
+@import "vars";
+
 .main {
     position: relative;
     background: url(../img/doctor-patient.jpg) no-repeat center top;
@@ -17,7 +19,7 @@
 }
 .subtitle {
     font-weight: 600;
-    font-size: 48px;
+    font-size: calcFluidFontSize(20, 48, 420, 1440);
     line-height: 59px;
     color: #2D4F9C;
     margin-bottom: 39px;
@@ -97,5 +99,11 @@
             background: transparent;
             padding: 14px 26px;
         }
+    }
+}
+@media (max-width: 909px) {
+    .main {
+        background: url(../img/doctor-patient-phone.jpg) no-repeat center top;
+        background-size: contain;
     }
 }

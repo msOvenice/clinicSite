@@ -1,9 +1,10 @@
+@import 'vars';
 .footer {
     background-color: #071C4A;
     padding: 67px 0 28px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: calcFluidFontSize(10, 14, 420, 1440);
     line-height: 19px;
 }
 .wrapper {
@@ -21,7 +22,7 @@
     width: 100%;
 }
 .link {
-    font-size: 16px;
+    font-size: calcFluidFontSize(12, 16, 420, 1440);
     line-height: 26px;
     color: #FFFFFF;
     text-decoration: none;
@@ -33,7 +34,7 @@
 .phone,
 .email {
     text-decoration: none;
-    font-size: 20px;
+    font-size: calcFluidFontSize(18, 20, 420, 1440);
     line-height: 27px;
     color: #FFFFFF;
     text-align: center;
@@ -44,6 +45,7 @@
 }
 .email {
     font-weight: 300;
+    font-size: calcFluidFontSize(10, 20, 420, 1440);
 }
 .btns {
     display: flex;

@@ -1,0 +1,70 @@
+.modal {
+    font-size: 12px;
+  }
+  .modal > .header {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: 21px;
+    top: 35px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+  }
+  .divImg {
+    text-align: start;
+    margin: 35px 0 35px 23px;
+  }
+  .list {
+    width: 100%;
+  }
+  .item {
+    cursor: pointer;
+    width: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 10px 30%;
+  }
+  .contentItem {
+    width: 150px;
+    position: relative;
+  }
+  .item:not(:last-child) {
+    border-bottom: 1px solid rgba(45, 79, 156, 0.5);
+    & .contentItem::after {
+      position: absolute;
+      content: url(../img/svg/plus.svg);
+      right: 0;
+    }
+  }
+  .button {
+    background: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+  }
+  @media (max-width: 1024px) {
+    .button {
+      display: block;
+    }
+  }
