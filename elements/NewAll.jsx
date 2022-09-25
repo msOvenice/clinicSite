@@ -11,7 +11,8 @@ const NewAll = ({src, title, section, date, flag}) => {
                 alt={"News"}
                 src={srcImg}
                 height={100}
-                width={120}/>
+                width={120}
+                layout={'fixed'}/>
         </div>
         <div className={styles.info}>
             <h4 className={flag == true ? styles.title : styles.titleSecond}>{title}</h4>

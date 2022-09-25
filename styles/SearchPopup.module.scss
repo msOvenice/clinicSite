@@ -1,0 +1,135 @@
+.btn {
+    max-width: 110px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px 0px 10px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    background: #52A958;
+    padding: 0 15px;
+    &Search {
+        max-width: 150px;
+    }
+}
+.label {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        bottom: 0;
+        width: 16px;
+        height: 22px;
+    }
+}
+.listInputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 41px;
+    max-width: 300px;
+    width: 100%;
+}
+.input {
+    max-width: 300px;
+    width: 100%;
+    font-size: calcFluidFontSize(14, 18, 420, 1440);
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+    outline: none;
+    padding: 9px 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    &:hover,
+    &:active,
+    &:focus {
+        border-bottom: 1px solid #52A958;
+        box-shadow: 0px 1px 1px rgba(82, 169, 88, 0.25);
+    }
+}
+.itemInputs:first-child > .label::before {
+    width: 20px;
+    background: url(../img/svg/user.svg);
+}
+.itemInputs:nth-child(2) > .label::before {
+    height: 18px;
+    background: url(../img/svg/stetoskop.svg);
+}
+.itemInputs:last-child > .label::before {
+    background: url(../img/svg/clinic.svg);
+}
+.modal {
+    font-size: 12px;
+    padding: 41px 35px ;
+  }
+  .modal > .header {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .modal > .content {
+    width: 100%;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: 21px;
+    top: 35px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+  }
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #52A958;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+.subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    max-width: 270px;
+    margin: 0 auto 36px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .btnGreen {
+        max-width: 370px;
+        margin: 0 auto;
+        background: #2D4F9C;
+    }
+}
+@media (max-width: 640px) {
+    .btnGreen {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 520px) {
+    .btnGreen {
+        display: block;
+    }
+}

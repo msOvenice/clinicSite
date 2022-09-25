@@ -4,7 +4,6 @@ import newsMain from '../news.json'
 import newsAll from '../news.all.json'
 import NewMain from '../elements/NewMain';
 import NewAll from '../elements/NewAll';
-import NavBlock from '../elements/NavBlock';
 
 const News = () => {
   let i = 0, j = 0;
@@ -22,6 +21,13 @@ const News = () => {
                     })
                 }
                 </div>
+                <div className={styles.post}>
+                    <h4 className={styles.titleBlock}>Підписатись на новини</h4>
+                    <label className={styles.label}>
+                        <input className={styles.input} type="email" name="email" id="email" placeholder='Введіть електнонну адресу' />
+                    </label>
+                    <button className={styles.btn}>Підписатись</button>
+                </div>
             </div>
             <div className={styles.all}>
                 <h3 className={styles.subtitle}>Всі новини</h3>
@@ -33,9 +39,9 @@ const News = () => {
                     })
                 }
                 </div>
+                <button className={styles.btnNext}>Наступна сторінка</button>
             </div>
         </div>
-        <NavBlock flag={true} />
     </section>
   )
 }

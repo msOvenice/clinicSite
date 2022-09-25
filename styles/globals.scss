@@ -50,7 +50,7 @@ body {
 .title {
 	text-align: center;
     font-weight: 700;
-    font-size: 40px;
+    font-size: calcFluidFontSize(24, 40, 420, 1440);
     line-height: 49px;
     color: #2D4F9C;
     text-transform: uppercase;
@@ -60,7 +60,7 @@ body {
     max-width: 505px;
     width: 100%;
     &:not(:last-child) {
-		margin-bottom: 37px;
+		margin-bottom: 27px;
 	}
 }
 .titleMain {
@@ -138,6 +138,6 @@ body {
 }
 @media (max-width: 520px) {
 	.popup-content {
-		width: 80vw !important;
+		width: 100vw !important;
 	}
 }

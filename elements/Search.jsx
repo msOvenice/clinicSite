@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Header.module.scss';
+import SearchPopup from './SearchPopup';
 
 const Search = () => {
   return (
@@ -22,9 +23,7 @@ const Search = () => {
                     </label>
                 </li>
             </ul>
-            <button className={styles.btn + ' ' + styles.btnGreen}>
-                Знайти
-            </button>
+            <SearchPopup />
         </div>
     </div>
   )

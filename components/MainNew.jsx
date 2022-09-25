@@ -2,7 +2,6 @@ import React from 'react'
 import styles from '../styles/NewsMain.module.scss'
 import newsAll from '../news.all.json'
 import NewAll from '../elements/NewAll';
-import NavBlock from '../elements/NavBlock';
 import src from '../img/news-main.png'
 import srcSlider from '../img/news-slider.jpg'
 import Image from 'next/image';
@@ -89,7 +88,6 @@ const MainNew = () => {
                     })
                 }
                 </div>
-                <NavBlock flag={false} />
             </div>
         </div>
     </section>

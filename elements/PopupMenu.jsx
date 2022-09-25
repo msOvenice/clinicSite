@@ -12,7 +12,7 @@ const PopupMenu = () => {
     <Popup
     trigger={<button className={styles.button}>
         <Image
-            alt={"Clinic Family"}
+            alt={"Open"}
             src={burger}
             height={48}
             width={40}

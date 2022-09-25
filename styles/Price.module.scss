@@ -1,3 +1,4 @@
+@import 'vars';
 .price {
     padding: 66px 0 30px;
 }
@@ -24,7 +25,7 @@
     justify-content: space-between;
 }
 .td {
-    font-size: 20px;
+    font-size: calcFluidFontSize(14, 20, 420, 1440);
     line-height: 24px;
     font-weight: 400;
     padding: 20px 0;
@@ -38,7 +39,40 @@
 }
 .copywriting {
     font-weight: 400;
-    font-size: 20px;
+    font-size: calcFluidFontSize(14, 20, 420, 1440);
     line-height: 24px;
     color: #2D4F9C;
+}
+@media (max-width: 1024px) {
+    .tds {
+        padding: 0 25px;
+    }
+    .container {
+        padding: 0 25px;
+    }
+}
+@media (max-width: 768px) {
+    .price {
+        padding: 37px 0 36px;
+    }
+    .table {
+        margin-bottom: 20px;
+    }
+    .tds {
+        align-items: center;
+    }
+    .td {
+        padding: 9px 0;
+    }
+    .td:first-child {
+        max-width: 214px;
+    }
+    .td:last-child {
+        max-width: 90px;
+        text-align: end;
+        height: fit-content;
+    }
+    .title {
+        margin-bottom: 54px;
+    }
 }

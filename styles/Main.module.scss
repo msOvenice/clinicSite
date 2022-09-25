@@ -2,10 +2,14 @@
 
 .main {
     position: relative;
-    background: url(../img/doctor-patient.jpg) no-repeat center top;
-    background-size: cover;
-    min-height: 460px;
-    width: 100vw;
+}
+.imgMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &Small {
+        display: none;
+    }
 }
 .container {
     padding: 82px 15px 146px;
@@ -14,7 +18,7 @@
 }
 .title {
     position: absolute;
-    bottom: 47px;
+    bottom: 11%;
     width: 100vw;
 }
 .subtitle {
@@ -39,10 +43,15 @@
 }
 .card {
     display: flex;
-    &Img {
+    &Img,
+    &Small {
         margin-right: 44px;
         //filter: drop-shadow(0px 3px 6px #2D4F9C);
         border-radius: 0px 0px 50px 0px;
+        display: block;
+    }
+    &Small {
+        display: none;
     }
     &:nth-child(2n) {
         justify-content: flex-end;
@@ -102,8 +111,42 @@
     }
 }
 @media (max-width: 909px) {
-    .main {
-        background: url(../img/doctor-patient-phone.jpg) no-repeat center top;
-        background-size: contain;
+    .imgMain {
+        display: none;
+        &Small {
+            display: block;
+        }
+    }
+    .infoCategory {
+        margin-bottom: 17px;
+    }
+    .infoBtn:nth-child(5) {
+        margin-bottom: 19px;
+    }
+    .cards {
+        grid-column-gap: 15px;
+    }
+    .cardImg,
+    .cardSmall {
+        margin-right: 25px;
+    }
+}
+@media (max-width: 676px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-row-gap: 55px;
+    }
+    .card:nth-child(2n),
+    .card {
+        justify-content: center;
+    }
+    .cardImg{
+        display: none;
+    }
+    .cardSmall {
+        display: block;
+    }
+    .container {
+        padding: 72px 25px 112px;
     }
 }

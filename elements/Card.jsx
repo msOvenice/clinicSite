@@ -16,6 +16,13 @@ const Card = ({name, surname, specialization, category, expierence, flag}) => {
           height={290}
           width={220} />
       </div>
+      <div className={stylesMain.cardSmall}>
+        <Image
+          alt={surname + ' ' + name}
+          src={srcImg}
+          height={263}
+          width={200} />
+      </div>
       <div className={stylesMain.info}>
         <h3 className={stylesMain.infoSurname}>{surname}</h3>
         <h3 className={stylesMain.infoName}>{name}</h3>
