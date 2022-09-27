@@ -55,3 +55,8 @@
 .container {
     max-width: 1198px;
 }
+@media (max-width: 768px) {
+    .feedback {
+        padding-bottom: 0;
+    }
+}

@@ -32,7 +32,7 @@ const Info = () => {
                     </ul>
                 </section>
                 <hr className={styles.hr}></hr>
-                <section className={styles.qiestion}>
+                <section className={styles.question}>
                     <h3 className={styles.subtitle}>З яких питань звертатись?</h3>
                     <ul className={styles.questionList}>
                         <li className={styles.Item}>Заключення декларацій на безкоштовне обслуговування у рамках медичної реформи.</li>
@@ -42,6 +42,7 @@ const Info = () => {
                         <li className={styles.Item}>Захворювання дихальної системи: ларингіт, бронхіт, пневмонія.</li>
                         <li className={styles.Item}>Захворювання серцево-судинної системи: гіпертонічна хвороба, ішемічна хвороба, церебральний атеросклероз.</li>
                     </ul>
+                    <button className={styles.infoBtn}>Записатись на прийом</button>
                 </section>
             </div>
             <Feedback />

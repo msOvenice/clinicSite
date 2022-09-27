@@ -1,6 +1,8 @@
 
 .carousel-root {
 	position: relative !important;
+	max-width: 640px;
+	margin: 0 auto;
 }
 .carousel-status {
     display: none;
@@ -30,7 +32,7 @@
 	border-right: none !important;
 }
 .control-dots {
-	bottom: -40px !important;
+	bottom: -30px !important;
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +48,25 @@
 }
 .carousel-slider {
 	position: initial !important;
+}
+
+@media (max-width: 1024px) {
+    .control-arrow {
+		top: 65% !important;
+	}
+}
+@media (max-width: 870px) {
+    .control-arrow {
+		top: 55% !important;
+	}
+}
+@media (max-width: 768px) {
+    .control-arrow {
+		top: 70% !important;
+	}
+}
+@media (max-width: 550px) {
+	.control-arrow {
+		top: 60% !important;
+	}
 }

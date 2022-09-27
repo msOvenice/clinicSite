@@ -1,3 +1,4 @@
+@import 'vars'; 
 .container {
     max-width: 918px;
     width: 100%;
@@ -33,7 +34,7 @@
         font-weight: 700;
         text-align: center;
         color: #2D4F9C;
-        font-size: 24px;
+        font-size: calcFluidFontSize(16, 24, 420, 1440);
         line-height: 29px;
     }
     &Name {
@@ -42,7 +43,7 @@
     &Specialization {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 24px;
+        font-size: alcFluidFontSize(16, 24, 420, 1440);
         line-height: 33px;
         color: #000000;
         margin-bottom: 10px;
@@ -50,7 +51,7 @@
     &Category {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        font-size: 24px;
+        font-size: alcFluidFontSize(16, 24, 420, 1440);
         line-height: 33px;
         color: #2D4F9C;
         margin-bottom: 35px;
@@ -71,7 +72,7 @@
     }
     &Expierence {
         font-weight: 600;
-        font-size: 24px;
+        font-size: alcFluidFontSize(14, 24, 420, 1440);
         line-height: 29px;
         margin-bottom: 23px;
         &Block {
@@ -83,13 +84,13 @@
     }
     &Year {
         font-weight: 600;
-        font-size: 36px;
+        font-size: alcFluidFontSize(24, 36, 420, 1440);
         line-height: 44px;
         color: #2D4F9C;
         margin-right: 16px;
         &Text {
             font-weight: 400;
-            font-size: 24px;
+            font-size: alcFluidFontSize(14, 24, 420, 1440);
             line-height: 29px;
         }
     }
@@ -119,4 +120,46 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+@media (max-width: 768px) {
+    .question {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        padding: 37px 15px 61px;
+    }
+    .infoBtn {
+        max-width: 150px;
+    }
+    .infoName,
+    .infoSurname {
+        line-height: 19.5px;
+    }
+    .infoName {
+        margin-bottom: 14px;
+    }
+    .infoSpecialization {
+        line-height: 21.79px;
+        margin-bottom: 4px;
+    }
+    .infoCategory {
+        line-height: 20.43px;
+        margin-bottom: 10px;
+    }
+    .infoExpierence {
+        margin-bottom: 0px;
+    }
+    .infoExpierenceBlock {
+        margin-bottom: 14px;
+    }
+    .info {
+        padding-top: 0;
+    }
+    .data {
+        padding-bottom: 41px;
+    }
+    .question > .infoBtn {
+        margin: 20px auto 0;
+    }
 }

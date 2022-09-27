@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Declaration.module.scss'
 import srcImg from '../img/my-doctor.png'
 import srcVac from '../img/vactine.jpg'
+import srcdec from '../img/declaration.jpg'
 import Image from 'next/image'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,12 +15,28 @@ import Feedback from '../elements/Feedback'
 const Declaration = () => {
     let settings = {
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+        ]
     };
     let i = 0, j = 0;
     return (
-        <div>
+        <div className={styles.decl}>
             <section className={styles.main}>
+                    <div className={styles.imgMain}>
+                        <Image 
+                            alt={"Declaration"}
+                            src={srcdec}
+                            height={967}
+                            width={1990} />
+                    </div>
                 <div className={styles.mainContent + ' container wrapper'}>
                     <h1 className={'titleMain ' + styles.mainTitle}>Заключення декларацій<br/>на БЕЗОПЛАТНЕ обслуговування в рамках медичної реформи</h1>
                     <div className={styles.mainDeclare}>
