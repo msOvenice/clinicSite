@@ -4,10 +4,15 @@ import logo from "../img/simejna-logo-2.png";
 import Image from 'next/image'
 import Search from '../elements/Search';
 import PopupMenu from '../elements/PopupMenu';
+import doctorsPage from '../pages/index'
+import declPage from '../pages/declaracja'
 
 const Header = () => {
   return (
     <header>
+        <div className={styles.headerTest}>
+            <p className={styles.headerText}>Сайт в режимі тестування</p>
+        </div>
         <div className={styles.headerFirst}>
             <div className='container'>
                 <div className={'wrapper ' + styles.wrapper}>
@@ -22,16 +27,16 @@ const Header = () => {
                     </div>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Лікарі</a>
+                            <a href="../" className={styles.link}>Лікарі</a>
                         </li>
                         <li className={styles.item}>
                             <a href="#" className={styles.link}>Клініки</a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Ціни</a>
+                            <a href="../price" className={styles.link}>Ціни</a>
                         </li>
                         <li className={styles.item}>
-                            <a href="#" className={styles.link}>Декларантам</a>
+                            <a href="../declaracja" className={styles.link}>Декларантам</a>
                         </li>
                         <li className={styles.item}>
                             <a href="#" className={styles.link}>Про нас</a>

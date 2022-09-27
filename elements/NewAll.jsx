@@ -15,7 +15,7 @@ const NewAll = ({src, title, section, date, flag}) => {
                 layout={'fixed'}/>
         </div>
         <div className={styles.info}>
-            <h4 className={flag == true ? styles.title : styles.titleSecond}>{title}</h4>
+            <a href='../newsMain' className={flag == true ? styles.title : styles.titleSecond}>{title}</a>
             <p className={flag == true ? styles.section : styles.sectionSecond}>{section}</p>
             <p className={styles.date}>{date}</p>
         </div>

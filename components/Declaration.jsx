@@ -11,6 +11,7 @@ import actions from "../actions.json";
 import articles from "../articles.json";
 import NewMain from '../elements/NewMain';
 import Feedback from '../elements/Feedback'
+import Link from 'next/link'
 
 const Declaration = () => {
     let settings = {
@@ -100,7 +101,7 @@ const Declaration = () => {
                     })
                 }
                 </Slider>
-                <button className={styles.articlesBtn}>Усі новини</button>
+                <Link href="../news"><button className={styles.articlesBtn}>Усі новини</button></Link>
             </section>
             <Feedback />
         </div>

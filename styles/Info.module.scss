@@ -84,7 +84,7 @@
     }
     &Year {
         font-weight: 600;
-        font-size: alcFluidFontSize(24, 36, 420, 1440);
+        font-size: calcFluidFontSize(24, 36, 420, 1440);
         line-height: 44px;
         color: #2D4F9C;
         margin-right: 16px;
@@ -121,6 +121,9 @@
     font-size: 16px;
     line-height: 24px;
 }
+.question > .infoBtn {
+    display: none;
+}
 @media (max-width: 768px) {
     .question {
         display: flex;
@@ -129,7 +132,8 @@
     .container {
         padding: 37px 15px 61px;
     }
-    .infoBtn {
+    .question > .infoBtn {
+        display: block;
         max-width: 150px;
     }
     .infoName,

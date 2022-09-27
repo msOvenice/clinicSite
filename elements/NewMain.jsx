@@ -31,7 +31,7 @@ const NewMain = ({src, title, desc, author, num, month, year, flag}) => {
       <p className={flag == true ? styles.desc : styles.descS}>{desc}</p>
       <div className='wrapper'>
         <p className={styles.author}>{author}</p>
-        <a className={styles.link} href="#">читати далі</a>
+        <a className={styles.link} href="../newsMain">читати далі</a>
       </div>
     </div>
   )

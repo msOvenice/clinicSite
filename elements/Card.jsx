@@ -4,6 +4,7 @@ import srcImg from '../img/doctor.png'
 import srcImgBig from '../img/doctor-big.png'
 import stylesMain from '../styles/Main.module.scss'
 import stylesInfo from '../styles/Info.module.scss'
+import Link from 'next/link'
 
 const Card = ({name, surname, specialization, category, expierence, flag}) => {
   return flag == true ?
@@ -29,7 +30,7 @@ const Card = ({name, surname, specialization, category, expierence, flag}) => {
         <p className={stylesMain.infoSpecialization}>{specialization}</p>
         <p className={stylesMain.infoCategory}>{category}</p>
         <button className={stylesMain.infoBtn}>Записатись на прийом</button>
-        <button className={stylesMain.infoBtn}>Детальніше</button>
+        <Link href="../info"><button className={stylesMain.infoBtn}>Детальніше</button></Link>
       </div>
   </div>
   ) :
