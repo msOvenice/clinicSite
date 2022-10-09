@@ -13,8 +13,14 @@
     max-width: 751px;
     width: 100%;
     &Img {
-        //filter: drop-shadow(0px 3px 6px #2D4F9C);
-        border-radius: 0px 0px 50px 0px;
+        filter: drop-shadow(0px 3px 6px #2D4F9C);
+        max-width: 400px;
+        width: 100%;
+        max-height: 527px;
+        height: auto;
+        img {
+            border-radius: 0px 0px 0px 50px;
+        }
     }
     &:nth-child(2n) {
         justify-content: flex-end;

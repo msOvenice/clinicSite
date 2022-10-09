@@ -1,28 +1,27 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
-import srcImg from '../img/doctor.png'
-import srcImgBig from '../img/doctor-big.png'
+import React from 'react'
 import stylesMain from '../styles/Main.module.scss'
 import stylesInfo from '../styles/Info.module.scss'
 import Link from 'next/link'
 
-const Card = ({name, surname, specialization, category, expierence, flag}) => {
+const Card = ({name, surname, specialization, category, expierence, img, imgBig, href, flag}) => {
+  const path = '_next/static/media';
   return flag == true ?
   (
     <div className={stylesMain.card }>
       <div className={stylesMain.cardImg}>
         <Image
           alt={surname + ' ' + name}
-          src={srcImg}
-          height={290}
-          width={220} />
+          src={`${path}/${img}`}
+          layout='fill'
+          objectFit='cover' />
       </div>
       <div className={stylesMain.cardSmall}>
         <Image
           alt={surname + ' ' + name}
-          src={srcImg}
-          height={263}
-          width={200} />
+          src={`${path}/${img}`}
+          layout='fill'
+          objectFit='cover' />
       </div>
       <div className={stylesMain.info}>
         <h3 className={stylesMain.infoSurname}>{surname}</h3>
@@ -30,7 +29,7 @@ const Card = ({name, surname, specialization, category, expierence, flag}) => {
         <p className={stylesMain.infoSpecialization}>{specialization}</p>
         <p className={stylesMain.infoCategory}>{category}</p>
         <button className={stylesMain.infoBtn}>Записатись на прийом</button>
-        <Link href="../info"><button className={stylesMain.infoBtn}>Детальніше</button></Link>
+        <Link href={href}><button className={stylesMain.infoBtn}>Детальніше</button></Link>
       </div>
   </div>
   ) :
@@ -39,9 +38,9 @@ const Card = ({name, surname, specialization, category, expierence, flag}) => {
       <div className={stylesInfo.cardImg}>
         <Image
           alt={surname + ' ' + name}
-          src={srcImgBig}
-          height={527}
-          width={400} />
+          src={`${path}/${imgBig}`}
+          layout='fill'
+          objectFit='cover' />
       </div>
       <div className={stylesInfo.info}>
         <h2 className={stylesInfo.infoSurname}>{surname}</h2>

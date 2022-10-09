@@ -25,7 +25,7 @@ const Header = () => {
                     </div>
                     <ul className={styles.list}>
                         <li className={styles.item}>
-                            <a href="../doctors" className={styles.link}>Лікарі</a>
+                            <a href="../doctors/" className={styles.link}>Лікарі</a>
                         </li>
                         <li className={styles.item}>
                             <a href="#" className={styles.link}>Клініки</a>

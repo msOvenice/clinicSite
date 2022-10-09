@@ -1,30 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '../styles/Info.module.scss'
 import Card from '../elements/Card';
 import Feedback from '../elements/Feedback';
 import doctors from '../doctors.json'
+import work from '../work.json'
 
 const Info = () => {
-    let ind = 3, i = 0;
+    const href = window.location.href;
+    console.log(href);
+    const regexp = /doctors\/([a-z]+)/;
+    let result = href.match(regexp);
+    let i = 0;
+
     return (
         <div className={styles.content}>
             <div className={styles.container + ' container'}>
                 <section className={styles.data}>
                     {
                         doctors.map((item) => {
-                        i += 1;
-                        if (i == ind)
-                            return <Card key={i} {...item} flag={false} />
+                        if (item.href == result[0])
+                            return <Card key={item.id} {...item} flag={false} />
                         })
                     }
                 </section>
                 <section className={styles.profile}>
                     <h3 className={styles.subtitle}>Профіль лікаря</h3>
                     <ul className={styles.work}>
-                        <li className={styles.Item}>2012 р. – закінчив Дніпропетровську медичну академію МЗ України;</li>
-                        <li className={styles.Item}>2012 – 2014 рр. – інтернатура за спеціальністю «Хірургія» на базі Херсонської обласної клінічної лікарні;</li>
-                        <li className={styles.Item}>2015 – 2019 рр. – ординатор, хірург Херсонської обласної клінічної лікарні</li>
-                        <li className={styles.Item}>2019 р. – т. ч. – завідуючий відділенням малоінвазивної та ендоскопічної хірургії Херсонського обласного онкологічного диспансера.</li>
+                        {
+                            work.map((item) => {
+                                i+=1;
+                                if (item.surname == result[1]) {
+                                    return item.text.map((el) => {
+                                        return <li key={i} className={styles.Item}>{el}</li>
+                                    });
+                                }
+                            })
+                        }
                     </ul>
                     <ul className={styles.achievement}>
                         <li className={styles.Item}>Член Європейскої асоціації ендоскопічних хірургів (EAES);</li>

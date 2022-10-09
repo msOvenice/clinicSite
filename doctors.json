@@ -1,50 +1,68 @@
 [
     {
-        "img": "../img/doctor.png",
-        "name": "Ім’я По-батькові",
-        "surname": "Прізвище",
+        "id": 1,
+        "img": "image_6487327.jpg",
+        "imgBig": "Likar_Lysak.jpg",
+        "name": "Оксана Миколаївна",
+        "surname": "Лисак",
+        "href": "doctors/lysak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
-        "expierence": "10"
+        "expierence": "7"
     },
     {
-        "img": "../img/doctor.png",
-        "name": "Ім’я По-батькові",
-        "surname": "Прізвище",
-        "specialization": "лікар-терапевт",
-        "category": "вищої категорії",
-        "expierence": "10"
+        "id": 2,
+        "img": "Likar_Popil.jpg",
+        "imgBig": "Likar_Popil.jpg",
+        "name": "Марія Іванівна",
+        "surname": "Попіль",
+        "href": "doctors/popil",
+        "specialization": "Практикуючий психолог",
+        "category": "Доктор філософії PhD",
+        "expierence": "38"
     },
     {
-        "img": "../img/doctor.png",
-        "name": "Ім’я По-батькові",
-        "surname": "Прізвище",
-        "specialization": "лікар-терапевт",
+        "id": 3,
+        "img": "Likar_Schepanyak.jpeg",
+        "imgBig": "IMG_5859.jpeg",
+        "name": "Наталія Павлівна",
+        "surname": "Щепаняк",
+        "href": "doctors/schepaniak",
+        "specialization": "лікар-терапевт та лікар-пульмонолог",
         "category": "вищої категорії",
-        "expierence": "10"
+        "expierence": "31"
     },
     {
-        "img": "../img/doctor.png",
+        "id": 4,
+        "img": "doctor.png",
+        "imgBig": "doctor-big.png",
         "name": "Ім’я По-батькові",
-        "surname": "Прізвище",
+        "surname": "Kurvak",
+        "href": "Kurvak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
-        "expierence": "10"
+        "expierence": "7"
     },
     {
-        "img": "../img/doctor.png",
+        "id": 5,
+        "img": "doctor.png",
+        "imgBig": "doctor-big.png",
         "name": "Ім’я По-батькові",
-        "surname": "Прізвище",
+        "surname": "LyKurvaksak",
+        "href": "LyKurvaksak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
-        "expierence": "10"
+        "expierence": "6"
     },
     {
-        "img": "../img/doctor.png",
+        "id": 6,
+        "img": "doctor.png",
+        "imgBig": "doctor-big.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
+        "href": "Plysak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
-        "expierence": "10"
+        "expierence": "5"
     }
 ]
