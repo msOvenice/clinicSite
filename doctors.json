@@ -5,7 +5,7 @@
         "imgBig": "Likar_Lysak.jpg",
         "name": "Оксана Миколаївна",
         "surname": "Лисак",
-        "href": "doctors/lysak",
+        "href": "/doctors/lysak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
         "expierence": "7"
@@ -16,7 +16,7 @@
         "imgBig": "Likar_Popil.jpg",
         "name": "Марія Іванівна",
         "surname": "Попіль",
-        "href": "doctors/popil",
+        "href": "/doctors/popil",
         "specialization": "Практикуючий психолог",
         "category": "Доктор філософії PhD",
         "expierence": "38"
@@ -27,7 +27,7 @@
         "imgBig": "IMG_5859.jpeg",
         "name": "Наталія Павлівна",
         "surname": "Щепаняк",
-        "href": "doctors/schepaniak",
+        "href": "/doctors/schepaniak",
         "specialization": "лікар-терапевт та лікар-пульмонолог",
         "category": "вищої категорії",
         "expierence": "31"
@@ -38,7 +38,7 @@
         "imgBig": "doctor-big.png",
         "name": "Ім’я По-батькові",
         "surname": "Kurvak",
-        "href": "Kurvak",
+        "href": "/doctors/Kurvak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
         "expierence": "7"
@@ -49,7 +49,7 @@
         "imgBig": "doctor-big.png",
         "name": "Ім’я По-батькові",
         "surname": "LyKurvaksak",
-        "href": "LyKurvaksak",
+        "href": "/LyKurvaksak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
         "expierence": "6"
@@ -60,7 +60,7 @@
         "imgBig": "doctor-big.png",
         "name": "Ім’я По-батькові",
         "surname": "Прізвище",
-        "href": "Plysak",
+        "href": "/Plysak",
         "specialization": "лікар-терапевт",
         "category": "вищої категорії",
         "expierence": "5"

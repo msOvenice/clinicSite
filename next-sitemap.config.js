@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://clinic-site-two.vercel.app',
+    siteUrl: 'http://localhost:3000',
     generateRobotsTxt: true,
   }

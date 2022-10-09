@@ -1,16 +1,18 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from '../styles/Info.module.scss'
 import Card from '../elements/Card';
 import Feedback from '../elements/Feedback';
 import doctors from '../doctors.json'
 import work from '../work.json'
+import { useRouter } from 'next/router';
 
 const Info = () => {
-    const href = window.location.href;
-    console.log(href);
+    const { asPath } = useRouter();
+    console.log(asPath); // '/blog/xyz'
     const regexp = /doctors\/([a-z]+)/;
-    let result = href.match(regexp);
+    let result = asPath.match(regexp);
     let i = 0;
+    console.log(result[1])
 
     return (
         <div className={styles.content}>
@@ -18,7 +20,7 @@ const Info = () => {
                 <section className={styles.data}>
                     {
                         doctors.map((item) => {
-                        if (item.href == result[0])
+                        if (item.href == asPath)
                             return <Card key={item.id} {...item} flag={false} />
                         })
                     }
