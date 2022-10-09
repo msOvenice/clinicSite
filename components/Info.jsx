@@ -9,10 +9,7 @@ import { useRouter } from 'next/router';
 const Info = () => {
     const { asPath } = useRouter();
     console.log(asPath); // '/blog/xyz'
-    const regexp = /doctors\/([a-z]+)/;
-    let result = asPath.match(regexp);
     let i = 0;
-    console.log(result[1])
 
     return (
         <div className={styles.content}>
@@ -31,7 +28,7 @@ const Info = () => {
                         {
                             work.map((item) => {
                                 i+=1;
-                                if (item.surname == result[1]) {
+                                if ('/doctors/' + item.surname == asPath) {
                                     return item.text.map((el) => {
                                         return <li key={i} className={styles.Item}>{el}</li>
                                     });
